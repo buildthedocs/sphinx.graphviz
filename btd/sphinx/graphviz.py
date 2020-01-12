@@ -151,9 +151,9 @@ class Graphviz(SphinxDirective):
         node['options'] = {'docname': self.env.docname}
 
         if 'graphviz_dot' in self.options:
-            node['options']['graphviz_dot'] = self.options['graphviz_dot']
+            node['options']['layout'] = self.options['graphviz_dot']
         if 'layout' in self.options:
-            node['options']['graphviz_dot'] = self.options['layout']
+            node['options']['layout'] = self.options['layout']
         if 'alt' in self.options:
             node['alt'] = self.options['alt']
         if 'align' in self.options:
@@ -180,7 +180,8 @@ class GraphvizSimple(SphinxDirective):
         'alt': directives.unchanged,
         'align': align_spec,
         'caption': directives.unchanged,
-        'graphviz_dot': directives.unchanged,
+        'layout': directives.unchanged,
+        'graphviz_dot': directives.unchanged,  # an old alias of `layout` option
         'name': directives.unchanged,
     }
 
@@ -190,7 +191,9 @@ class GraphvizSimple(SphinxDirective):
                        (self.name, self.arguments[0], '\n'.join(self.content))
         node['options'] = {'docname': self.env.docname}
         if 'graphviz_dot' in self.options:
-            node['options']['graphviz_dot'] = self.options['graphviz_dot']
+            node['options']['layout'] = self.options['graphviz_dot']
+        if 'layout' in self.options:
+            node['options']['layout'] = self.options['layout']
         if 'alt' in self.options:
             node['alt'] = self.options['alt']
         if 'align' in self.options:
@@ -208,7 +211,7 @@ class GraphvizSimple(SphinxDirective):
 def render_dot(self: SphinxTranslator, code: str, options: Dict,
                format: str, prefix: str = 'graphviz') -> Tuple[str, str]:
     """Render graphviz code into a PNG or PDF output file."""
-    graphviz_dot = options.get('graphviz_dot', self.builder.config.graphviz_dot)
+    graphviz_dot = options.get('layout', self.builder.config.graphviz_dot)
     hashkey = (code + str(options) + str(graphviz_dot) +
                str(self.builder.config.graphviz_dot_args)).encode()
 

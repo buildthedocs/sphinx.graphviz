@@ -23,9 +23,10 @@ This is a patched version of [`sphinx.ext.graphviz`](https://github.com/sphinx-d
 
 --------------------
 
-## Added features
+## Added features and changes
 
-* TBD
+* `2.3.1.post1`
+  * Updated directive options according to documentation (see: [sphinx-doc/sphinx#6991](https://github.com/sphinx-doc/sphinx/issues/6991#issuecomment-573446371))
 
 ## Cross-References
 
