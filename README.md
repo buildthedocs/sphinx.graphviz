@@ -6,7 +6,7 @@
 [![Libraries.io status for latest release](https://img.shields.io/librariesio/release/pypi/btd.sphinx.graphviz)](https://libraries.io/github/buildthedocs/sphinx.graphviz)
 [![Requires.io](https://img.shields.io/requires/github/buildthedocs/sphinx.graphviz)](https://requires.io/github/buildthedocs/sphinx.graphviz/requirements/?branch=master)  
 <!--[![Travis](https://img.shields.io/travis/com/buildthedocs/sphinx.graphviz?logo=Travis)](https://travis-ci.com/buildthedocs/sphinx.graphviz)-->
-[![PyPI](https://img.shields.io/pypi/v/btd.sphinx.graphviz?logo=PyPI)](https://pypi.org/project/sphinx.graphviz/)
+[![PyPI](https://img.shields.io/pypi/v/btd.sphinx.graphviz?logo=PyPI)](https://pypi.org/project/btd.sphinx.graphviz/)
 ![PyPI - Status](https://img.shields.io/pypi/status/btd.sphinx.graphviz?logo=PyPI)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/btd.sphinx.graphviz?logo=PyPI)
 [![Dependent repos (via libraries.io)](https://img.shields.io/librariesio/dependent-repos/pypi/btd.sphinx.graphviz)](https://github.com/buildthedocs/sphinx.graphviz/network/dependents)  
@@ -25,6 +25,8 @@ This is a patched version of [`sphinx.ext.graphviz`](https://github.com/sphinx-d
 
 ## Added features and changes
 
+* `2.3.1.post2`
+  * TBD
 * `2.3.1.post1`
   * Updated directive options according to documentation (see: [sphinx-doc/sphinx#6991](https://github.com/sphinx-doc/sphinx/issues/6991#issuecomment-573446371))
 

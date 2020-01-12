@@ -49,7 +49,7 @@ with open("requirements.txt") as file:
 
 projectName =           "sphinx.graphviz"
 projectNameWithPrefix = "btd." + projectName
-version =               "2.3.1.post1"
+version =               "2.3.1.post2"
 
 github_url =  "https://github.com/buildthedocs/" + projectName
 rtd_url =     "https://" + projectNameWithPrefix.replace(".", "-") + ".readthedocs.io/en/latest/"
