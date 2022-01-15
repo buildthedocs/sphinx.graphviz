@@ -9,8 +9,8 @@
 #
 # License:
 # ============================================================================
-# Copyright 2017-2019 Patrick Lehmann - Bötzingen, Germany
-# Copyright (c) 2007-2019 by the Sphinx team (see AUTHORS file).
+# Copyright 2017-2022 Patrick Lehmann - Bötzingen, Germany
+# Copyright (c) 2007-2022 by the Sphinx team (see AUTHORS file).
 # All rights reserved.
 
 # Redistribution and use in source and binary forms, with or without
@@ -49,7 +49,7 @@ with open("requirements.txt") as file:
 
 projectName =           "sphinx.graphviz"
 projectNameWithPrefix = "btd." + projectName
-version =               "2.3.1.post2"
+version =               "4.3.1.post1"
 
 github_url =  "https://github.com/buildthedocs/" + projectName
 rtd_url =     "https://" + projectNameWithPrefix.replace(".", "-") + ".readthedocs.io/en/latest/"
@@ -80,11 +80,10 @@ setuptools.setup(
 		"License :: OSI Approved :: BSD License",
 		"Operating System :: OS Independent",
 		"Programming Language :: Python :: 3 :: Only",
-		"Programming Language :: Python :: 3.4",
-		"Programming Language :: Python :: 3.5",
-		"Programming Language :: Python :: 3.6",
 		"Programming Language :: Python :: 3.7",
 		"Programming Language :: Python :: 3.8",
+		"Programming Language :: Python :: 3.9",
+		"Programming Language :: Python :: 3.10",
 		"Development Status :: 5 - Production/Stable",
 		"Intended Audience :: Developers",
 		"Topic :: Documentation :: Sphinx",
@@ -92,7 +91,7 @@ setuptools.setup(
 	],
 	keywords="Sphinx Documentation Graphviz",
 
-	python_requires='>=3.4',
+	python_requires='>=3.7',
 	install_requires=requirements,
 	# provides=
 	# obsoletes=
